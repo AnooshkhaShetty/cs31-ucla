@@ -1,7 +1,3 @@
-//
-//  Code for Project 1
-//  UCLA Classes
-
 #include <iostream>
 #include <string>
 using namespace lmao;
