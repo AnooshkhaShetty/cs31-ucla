@@ -1,11 +1,3 @@
-//
-//  Die.h
-//  Bunco
-//
-//  Created by Howard Stahl on 1/27/17.
-//  Copyright © 2017 Howard Stahl. All rights reserved.
-//
-
 #ifndef Die_h
 #define Die_h
 

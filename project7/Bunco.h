@@ -1,11 +1,3 @@
-//
-//  Bunco.h
-//  Bunco
-//
-//  Created by Howard Stahl on 1/27/17.
-//  Copyright © 2017 Howard Stahl. All rights reserved.
-//
-
 #ifndef Bunco_h
 #define Bunco_h
 #include <string>
@@ -21,10 +13,6 @@ namespace cs31
     // a Bunco Game.  Each Game is made up of a Board, two Players
     // and tracks the current round of play.
     // CS 31 students need to complete the TODO portions of this class
-
-    // DOOT means a finished TODO
-    // It's also very funny
-    // "DOOT"
 
     class Bunco
     {
@@ -47,15 +35,15 @@ namespace cs31
         // push forward round of play
         void nextRound(  );
         
-        // DOOT let the human player randomly toss the die, returning the value rolled
+        // let the human player randomly toss the die, returning the value rolled
         int humanPlay( );
-        // DOOT for testing purposes and force a particular rolled value
+        // for testing purposes and force a particular rolled value
         int humanPlay( const Die & d );
 
 
-        // DOOT let the computer player randomly toss the die, returning the value rolled
+        // let the computer player randomly toss the die, returning the value rolled
         int computerPlay( );
-        // DOOT for testing purposes and force a particular rolled value
+        // for testing purposes and force a particular rolled value
         int computerPlay( const Die & d );
         // called to end a round of play, updating the board if a player has won the round
         void endTurn();

@@ -1,11 +1,3 @@
-//
-//  Player.h
-//  Bunco
-//
-//  Created by Howard Stahl on 1/27/17.
-//  Copyright © 2017 Howard Stahl. All rights reserved.
-//
-
 #ifndef Player_h
 #define Player_h
 #include "Die.h"
@@ -17,20 +9,15 @@ namespace cs31
     // one of the Bunco Players.  Each Player has its own Die, knows
     // which round is currently being played and knows how to scores
     // it rolled value for the current round.
-    // CS 31 students need to complete the TODO portions of this class
-
-    // DOOT means a finished TODO
-    // It's also very funny
-    // "DOOT"
 
     class Player
     {
     public:
         Player();
-        int roll( );                 // DOOT randomly toss the Player's Die
-        int roll( int amount );      // DOOT force a certain roll
-        void setRound( int round );  // DOOT set current round, resetting the Player's score
-        int  getScore( ) const;      // DOOT how many times has Player tossed the current round value?
+        int roll( );                 // randomly toss the Player's Die
+        int roll( int amount );      // force a certain roll
+        void setRound( int round );  // set current round, resetting the Player's score
+        int  getScore( ) const;      // how many times has Player tossed the current round value?
     private:
         Die mDie;    // the Player's Die
         int mScore;  // the Player's score for this round

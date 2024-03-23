@@ -1,15 +1,3 @@
-//
-//  Bunco.cpp
-//  Bunco
-//
-//  Created by Howard Stahl on 1/27/17.
-//  Copyright © 2017 Howard Stahl. All rights reserved.
-//
-
-// DOOT means a finished TODO
-// It's also very funny
-// "DOOT"
-
 #include "Bunco.h"
 #include <iostream>
 
@@ -53,14 +41,14 @@ void Bunco::setRound(int round) {
     mComputer.setRound(round);
 }
 
-// DOOT: let the human player randomly play
+// let the human player randomly play
 // randomly roll the human player's die and return what was rolled
 int Bunco::humanPlay() {
     const int amount_rolled = mHuman.roll();
     return (amount_rolled);
 }
 
-// DOOT: let the human player cheat
+// let the human player cheat
 // force a specific roll amount for the human plyaer
 int Bunco::humanPlay(const Die& d) {
     // stubbed out for now...
@@ -69,14 +57,14 @@ int Bunco::humanPlay(const Die& d) {
     return (amount_rolled);
 }
 
-// DOOT: let the computer player play
+// let the computer player play
 // randomly roll the computer player's die and return what was rolled
 int Bunco::computerPlay() {
     const int amount_rolled = mComputer.roll();
     return (amount_rolled);
 }
 
-// DOOT: let the computer player cheat
+// let the computer player cheat
 // force a specific roll amount for the computer player
 int Bunco::computerPlay(const Die& d) {
     const int amount_rolled = d.getValue();
@@ -84,7 +72,7 @@ int Bunco::computerPlay(const Die& d) {
     return (amount_rolled);
 }
 
-// DOOT: update the Board now that a turn of play has ended
+// update the Board now that a turn of play has ended
 // if appropriate, mark the Human or Computer player as the winner on the board
 void Bunco::endTurn() {
     const int human_score = mHuman.getScore();
@@ -99,7 +87,7 @@ void Bunco::endTurn() {
     }
 }
 
-// DOOT: considering each player's score,
+// considering each player's score,
 //       determine the winner of this round of play
 Bunco::ROUNDOUTCOME Bunco::determineRoundOutcome() {
     const int human_score = mHuman.getScore();
@@ -117,7 +105,7 @@ Bunco::ROUNDOUTCOME Bunco::determineRoundOutcome() {
     return result;
 }
 
-// DOOT: count up the number of won rounds by each player
+// count up the number of won rounds by each player
 //       to determine the game's outcome
 Bunco::GAMEOUTCOME Bunco::determineGameOutcome() const {
     const int human_rounds_won = mBoard.countUpHumanRoundWins();
@@ -149,4 +137,4 @@ Player Bunco::getComputer() const { return (mComputer); }
 
 Board Bunco::getBoard() const { return (mBoard); }
 
-}  // namespace cs31
+}

@@ -1,11 +1,3 @@
-//
-//  Board.h
-//  Bunco
-//
-//  Created by Howard Stahl on 1/27/17.
-//  Copyright © 2017 Howard Stahl. All rights reserved.
-//
-
 #ifndef Board_h
 #define Board_h
 #include "BoardRow.h"
@@ -21,11 +13,6 @@ namespace cs31
     // the round or the computer player wins the round.  Given the
     // array of BoardRow, this class can count up how many rounds each
     // player has won.
-    // CS 31 students need to complete the TODO portions of this class
-
-    // DOOT means a finished TODO
-    // It's also very funny
-    // "DOOT"
 
     class Board
     {
@@ -33,13 +20,13 @@ namespace cs31
         Board();
         // set the current round
         void setCurrentRound( int round );
-        // DOOT set human as the round winner
+        // set human as the round winner
         void markHumanAsWinner();
-        // DOOT set the computer as the round winner
+        // set the computer as the round winner
         void markComputerAsWinner();
-        // DOOT how many rounds has the computer won so far?
+        // how many rounds has the computer won so far?
         int countUpComputerRoundWins( ) const;
-        // DOOT how many rounds has the comptuer won so far?
+        // how many rounds has the comptuer won so far?
         int countUpHumanRoundWins( ) const;
         // stringify this Board
         std::string display( ) const;
